@@ -17,7 +17,7 @@ namespace Homework
                 }
                 else a = b = 0;
                 Console.WriteLine($"A = {a}, B = {b}");
-            }*/
+            }
             {
                 Console.WriteLine("ДЗ 1 задание 3");
                 Console.Write("operand1 = "); double.TryParse(Console.ReadLine(), out double operand1);
@@ -42,7 +42,16 @@ namespace Homework
                         Console.WriteLine("Error Вы ввели неправильный sign");
                         break;
                 }
-            } 
+            } */
+            {
+                Console.WriteLine("ДЗ 1 задание 4");
+                Console.Write("Count = "); int.TryParse(Console.ReadLine(), out int count);
+                if (count >= 0 && count <= 14) Console.WriteLine("Вы попали в отрезок: [0 - 14]");
+                else if (count >= 15 && count <= 35) Console.WriteLine("Вы попали в отрезок [15 - 35]");
+                else if (count >= 36 && count <= 50) Console.WriteLine("Вы попали в отрезок [36 - 50]");
+                else if (count >= 51 && count <= 100) Console.WriteLine("Вы попали в отрезок [51 - 100]");
+                else Console.WriteLine("Вы не попали не на один отрезок!");
+            }
         }
     }
 }
